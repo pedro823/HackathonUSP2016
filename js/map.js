@@ -26,6 +26,17 @@ function mapFunc() {
                 info: 'Teste as fuck' +
                 '<b> teste de negrito embaixo</b><br><br>' +
                 'teste de <em>itálico</em>',
+                id: "000001",
+            },
+            {
+                title: "Construção do IME",
+                lat: -23.558672,
+                lng: -46.732178,
+                animation: google.maps.Animation.DROP,
+                info: '<b>Contrução no bloco C do IME</b><br><br>' +
+                '<b>Custo:</b> 1 zilhão de reais' +
+                '<br><b>Início em:</b> 1/8/1990' +
+                '<br><b>Previsão de término:</b> 1/8/1991',
             },
             {
                 title: "fau",
@@ -49,10 +60,22 @@ function mapFunc() {
             var marker = new google.maps.Marker({position: latlng, animation: item.animation});
             marker.setMap(map);
             google.maps.event.addListener(marker, 'click', function() {
-                var info = new google.maps.InfoWindow({
-                    content: item.info,
+                /* var info = new google.maps.InfoWindow({
+                     content: item.info,
                 });
                 info.open(map, marker);
+                */
+                $.ajax({
+                    type: "POST",
+                    url: "",
+                    data: "name=" + item.title +
+                          "&lat=" + item.lat +
+                          "&lng=" + item.lng,
+                    success: function(input) {
+                        //LEMBRAR DE LIMPAR A TELA!
+                        console.log(input);
+                    }
+                });
             });
             clusterer.push(marker);
         });
@@ -60,7 +83,7 @@ function mapFunc() {
     var mapOptions = {
         center: new google.maps.LatLng(-23.560690, -46.728243),
         zoom: 15,
-        mapTypeId: google.maps.MapTypeId.HYBRID,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
         disableDefaultUI:true,
         mapTypeControl: true,
         scaleControl: true
