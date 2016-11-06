@@ -51,13 +51,11 @@ Route::group(['middleware' => 'auth'], function () {
            		}
            	}
 
-	    return view('categories')->with(['categories' => $categories, 'points' => $points]);
-	});
+           	foreach($categories as $category) {
+           		$category->video = str_replace("watch?v=", "v/", $category->video);
+           	}
 
-	Route::get('/category/{id}', function ($id) {
-		$category = App\Category::find($id);
-		$category->video = str_replace("watch?v=", "v/", $category->video);
-	    return view('category')->with('category', $category);
+	    return view('categories')->with(['categories' => $categories, 'points' => $points]);
 	});
 
 	Route::get('/category_points', function() {

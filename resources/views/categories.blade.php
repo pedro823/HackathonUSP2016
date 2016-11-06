@@ -17,6 +17,7 @@
               @endforeach
             <iframe width="560" height="315" src="{{ $category->video }}?rel=0;theme=light;color=white&cc_lang_pref=pt&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
             <p class="paragrafo">{{ $category->description }}</p>
+            <div class="wrapper-center"><a href="{{ url('question?category='.$category->id) }}" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">PERGUNTAS</a></div>
           </div>
         </li>
       @endforeach
