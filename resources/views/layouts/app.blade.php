@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-cyan.min.css"/>
   <link rel="stylesheet" href="/HackathonUSP2016/public/css/materialize.css">
   <link href="/HackathonUSP2016/public/css/styles.css" rel="stylesheet">
+  <link href="/HackathonUSP2016/public/css/login.css" rel="stylesheet">
 
   <!-- Scripts -->
   <script>
