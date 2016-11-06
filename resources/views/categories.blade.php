@@ -6,10 +6,11 @@
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
                 <div class="panel-heading">Dashboard</div>
-
                 <div class="panel-body">
-                    FORMULÁRIO CHIQUE CUSTOMIZADO
-                    <br><a href="{{ url('categories') }}">PRÓXIMA PÁGINA</a>
+                    <b>LISTA DE CATEGORIAS</b>
+                        @foreach ($categories as $category)
+                            <p><a href="{{ url('/category/'.$category->id) }}">{{ $category->name }}</a></p>
+                        @endforeach
                 </div>
             </div>
         </div>

@@ -8,8 +8,10 @@
                 <div class="panel-heading">Dashboard</div>
 
                 <div class="panel-body">
-                    FORMULÁRIO CHIQUE CUSTOMIZADO
-                    <br><a href="{{ url('categories') }}">PRÓXIMA PÁGINA</a>
+                    <p>{{ $category->name }}</p>
+                    <p>{{ $category->description }}</p>
+                    <p>{{ $category->video }}</p>
+                    <br><a href="{{ url('questions?category='.$category->id) }}">PERGUNTAS!</a>
                 </div>
             </div>
         </div>
