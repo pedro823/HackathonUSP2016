@@ -1,34 +1,26 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
-                <div class="panel-body">
-                    <h3>LISTA DE CATEGORIAS</h3>
-                        @foreach ($categories as $category)
-                            <p>
-                            @if ($category->unlocked)<a href="{{ url('/category/'.$category->id) }}">{{ $category->name }}</a>
-                            @else
-                           {{ $category->name }}
-                            @endif
-                            </p>
-                            <p>
-                            @foreach ($points as $point)
-                                @if ($point->id == $category->id)
-                                    <div class="progress">
-                                      <div class="progress-bar" role="progressbar" aria-valuenow="{{round($point->user_total/$point->category_total*100)}}" aria-valuemin="0" aria-valuemax="100" style="width: {{round($point->user_total/$point->category_total*100)}}%;">
-                                        {{round($point->user_total/$point->category_total*100)}}%
-                                      </div>
-                                    </div>
-                                @endif
-                            @endforeach
-                        @endforeach
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<section class="categorias-page">
+
+  <h4>Categorias</h4>
+
+  <ul class="collapsible popout" data-collapsible="accordion">
+      @foreach ($categories as $category)
+        <li>
+          <div class="collapsible-header"><i class="material-icons">brightness_1</i>{{ $category->name }}</div>
+          <div class="collapsible-body">
+              @foreach ($points as $point)
+                  @if ($point->id == $category->id)
+                      {{round($point->user_total/$point->category_total*100)}}
+                  @endif
+              @endforeach
+            <iframe width="560" height="315" src="{{ $category->video }}?rel=0;theme=light;color=white&cc_lang_pref=pt&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
+            <p class="paragrafo">{{ $category->description }}</p>
+          </div>
+        </li>
+      @endforeach
+    </ul>
+
+</section>
 @endsection
