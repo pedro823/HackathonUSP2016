@@ -18,8 +18,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-cyan.min.css"/>
     <link rel="stylesheet" href="/HackathonUSP2016/public/css/materialize.css">
-    <link href="/css/app.css" rel="stylesheet">
-    <link href="/css/login.css" rel="stylesheet">
+    <link href="/HackathonUSP2016/public/css/app.css" rel="stylesheet">
+    <link href="/HackathonUSP2016/public/css/login.css" rel="stylesheet">
 
     <!-- Scripts -->
     <script>
