@@ -9,9 +9,9 @@
 
                 <div class="panel-body">
                     <p>{{ $category->name }}</p>
+                    <iframe width="560" height="315" src="{{ $category->video }}" frameborder="0" allowfullscreen></iframe>
                     <p>{{ $category->description }}</p>
-                    <p>{{ $category->video }}</p>
-                    <br><a href="{{ url('questions?category='.$category->id) }}">PERGUNTAS!</a>
+                    <br><a href="{{ url('question?category='.$category->id) }}">PERGUNTAS!</a>
                 </div>
             </div>
         </div>

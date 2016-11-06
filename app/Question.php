@@ -18,8 +18,13 @@ class Question extends Model
         return $this->belongsTo('App\Category');
     }
 
-    public function questions() 
+    public function options() 
     {
         return $this->hasMany('App\Option');
+    }
+
+    public function users()
+    {
+        return $this->belongsToMany('App\User')->withPivot('is_correct')->withTimestamps();
     }
 }
