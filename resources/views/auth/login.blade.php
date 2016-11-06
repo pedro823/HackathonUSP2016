@@ -34,7 +34,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+                            <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" style="background-color: #3F51B5; color: #FFF;">
                                 Login
                             </button>
                         </div>
