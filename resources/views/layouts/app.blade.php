@@ -49,7 +49,11 @@
   <header class="header-bar mdl-layout__header mdl-layout__header--waterfall">
     <div class="mdl-layout__header-row">
     <!-- Title -->
-    <a href="{{ url('/') }}" class="title-container">
+    @if (Auth::guest())
+      <a href="{{ url('/login') }}" class="title-container">
+    @else
+      <a href="{{ url('/categories') }}" class="title-container">
+    @endif
       <img class="logo-image" src="/HackathonUSP2016/public/images/logo/logo.svg">
       <div>
         <span class="title-text">{{ config('app.name', 'Aprendética') }}</span>

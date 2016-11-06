@@ -71,15 +71,30 @@ main {
     }
 }
 
-/*---------- Graph ----------*/
+/*---------- Painel ----------*/
 #painel {
     background: #FFFFFF;
-    height: 355px;
-    margin: 16px 5px 15px 15px;
+    margin: 16px 5px -16px 15px;
     padding: 20px 23px 17px 28px;
     position: relative;
     border-radius: 2px;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+/*---------- Categorias ----------*/
+.categorias-page {
+  background: #FAFAFA;
+  padding: 16px;
+  position: relative;
+}
+.categoria-container {
+  display: inline-block;
+}
+.categoria-item {
+  background: #EEEEEE;
+  margin: 8px;
+  padding: 16px;
+  display: inline-block;
 }
 
 /*---------- Icons ----------*/
