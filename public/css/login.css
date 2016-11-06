@@ -1,0 +1,48 @@
+html, body {
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.body-login {
+    background-color: #3F51B5;
+}
+
+.wrapper-center {
+    text-align: center !important;
+}
+
+.form {
+    padding: 100px;
+}
+
+.padded {
+    margin: 200px;
+    width: 50%;
+}
+
+.login-title {
+    padding: 1px;
+    background-color: #283593;
+    color: #ffffff;
+}
+
+.subtitle {
+    color: #aaa;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.login-form {
+    background-color: #E8EAF6;
+    padding: 2% 10%;
+}
+
+.login-container {
+    width: 100%;
+}
