@@ -1,6 +1,5 @@
 @extends('layouts.app')
 
-@section('content')
 <div id="body-login" style="background-color: #3F51B5">
     <div class="wrapper-center">
         <div class="flex-center">
@@ -28,5 +27,3 @@
     </div>
     <script async defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
 </div>
-
-@endsection

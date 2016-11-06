@@ -11,7 +11,7 @@
                     <p>{{ $category->name }}</p>
                     <p>{{ $category->description }}</p>
                     <p>{{ $category->video }}</p>
-                    <br><a href="{{ url('questions?category='.$category->id) }}">PERGUNTAS!</a>
+                    <br><a href="{{ url('question?category='.$category->id) }}">PERGUNTAS!</a>
                 </div>
             </div>
         </div>

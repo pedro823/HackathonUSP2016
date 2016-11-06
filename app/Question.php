@@ -22,4 +22,9 @@ class Question extends Model
     {
         return $this->hasMany('App\Option');
     }
+
+    public function users()
+    {
+        return $this->belongsToMany('App\User')->withPivot('is_correct')->withTimestamps();
+    }
 }
