@@ -1,0 +1,167 @@
+/* author: Raphael R. Gusmão */
+
+html, body {
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+main {
+    background: #424242;
+}
+
+/*---------- Header ----------*/
+.header-bar {
+    height: 64px;
+}
+@media screen and (max-width: 1024px) {
+    .mdl-layout__header-row {
+        height: 64px !important;
+    }
+    .mdl-layout__header.is-compact {
+        max-height: 64px !important;
+    }
+}
+.dropdown-button {
+  background-color: #3F51B5 !important;
+  box-shadow: none;
+}
+.dropdown-content a {
+  color: #3F51B5 !important;
+}
+@media (max-width: 420px) {
+  .dropdown-button {
+    width: 5px !important;
+  }
+}
+
+/*---------- Title ----------*/
+.title-container div {
+    display: inline-block;
+    margin-top: 7px;
+}
+@media (max-width: 992px) {
+    .title-container {
+        position: absolute;
+        left: calc(50% - 136px);
+    }
+}
+.title-text {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: normal;
+}
+.title-text-mini {
+    color: #FFFFFF;
+    font-weight: normal;
+}
+.logo-image {
+    height: 48px;
+    margin: 0 9px 0 0;
+}
+
+/*---------- Content ----------*/
+.conteudo {
+    background: #FAFAFA;
+    padding: 16px;
+}
+@media (max-width: 992px) {
+    .conteudo {
+
+    }
+}
+
+/*---------- Graph ----------*/
+#painel {
+    background: #FFFFFF;
+    height: 355px;
+    margin: 16px 5px 15px 15px;
+    padding: 20px 23px 17px 28px;
+    position: relative;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+/*---------- Icons ----------*/
+.social-icon {
+    margin: 0 0 12px -12px;
+    height: 48px;
+    width: 48px;
+}
+.footer-icon {
+    margin-left: 14px;
+    height: 100px;
+    width: 100px;
+}
+.social-icon path, .footer-icon path {
+    fill: rgba(255,255,255, 0.70);
+    transition: fill 0.1s;
+}
+.social-icon:hover path, .footer-icon:hover path {
+    fill: #FFFFFF;
+}
+
+/*---------- Footer ----------*/
+.mdl-mega-footer {
+    height: 100px;
+    position: relative;
+}
+.mdl-mega-footer--middle-section {
+    margin: -8px 0 -23px -8px;
+}
+.footer-left {
+    position: absolute;
+    right: 20px;
+    bottom: -43px;
+}
+@media (max-width: 572px) {
+    .footer-left {
+        position: relative;
+        margin-top: -72px;
+    }
+    .footer-icon {
+        margin-top: -11px;
+    }
+}
+
+
+/*---------- Links ----------*/
+.default-link {
+    word-break: break-all;
+    color: #00BCD4;
+    transition: color 0.1s;
+}
+.default-link:hover {
+    color: #18FFFF;
+}
+/* Footer */
+.footer-link {
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.1s;
+}
+.footer-link:hover {
+    color: #FFFFFF !important;
+}
+
+/*---------- Others ----------*/
+.primary-color {
+    color: #3F51B5;
+}
+.centralizado {
+    text-align: center;
+}
+.paragrafo {
+    text-align: justify;
+    text-indent: 24px;
+    white-space: normal;
+    margin: 0;
+}
+.clear {
+    clear: both;
+}
+@media (max-width: 420px) {
+  .hidden-cell {
+    display: none;
+  }
+}

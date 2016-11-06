@@ -1,18 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
-
-                <div class="panel-body">
-                    FORMULÁRIO CHIQUE CUSTOMIZADO
-                    <br><a href="{{ url('categories') }}">PRÓXIMA PÁGINA</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<section class="conteudo">
+  <div id="painel">
+    Aprendética
+  </div>
+</section>
 @endsection
