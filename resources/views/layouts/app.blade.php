@@ -15,25 +15,25 @@
 
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="HackathonUSP2016/public/images/favicon/apple-touch-icon.png?v=1">
-  <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png?v=1" sizes="32x32">
-  <link rel="icon" type="image/png" href="images/favicon/favicon-194x194.png?v=1" sizes="194x194">
-  <link rel="icon" type="image/png" href="images/favicon/android-chrome-192x192.png?v=1" sizes="192x192">
-  <link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png?v=1" sizes="16x16">
-  <link rel="manifest" href="images/favicon/manifest.json?v=1">
-  <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg?v=1" color="#3f51b5">
-  <link rel="shortcut icon" href="images/favicon/favicon.ico?v=1">
+  <link rel="icon" type="image/png" href="/HackathonUSP2016/public/images/favicon/favicon-32x32.png?v=1" sizes="32x32">
+  <link rel="icon" type="image/png" href="/HackathonUSP2016/public/images/favicon/favicon-194x194.png?v=1" sizes="194x194">
+  <link rel="icon" type="image/png" href="/HackathonUSP2016/public/images/favicon/android-chrome-192x192.png?v=1" sizes="192x192">
+  <link rel="icon" type="image/png" href="/HackathonUSP2016/public/images/favicon/favicon-16x16.png?v=1" sizes="16x16">
+  <link rel="manifest" href="/HackathonUSP2016/public/images/favicon/manifest.json?v=1">
+  <link rel="mask-icon" href="/HackathonUSP2016/public/images/favicon/safari-pinned-tab.svg?v=1" color="#3f51b5">
+  <link rel="shortcut icon" href="/HackathonUSP2016/public/images/favicon/favicon.ico?v=1">
   <meta name="apple-mobile-web-app-title" content="Aprend&eacute;tica">
   <meta name="application-name" content="Aprend&eacute;tica">
-  <meta name="msapplication-config" content="images/favicon/browserconfig.xml?v=1">
+  <meta name="msapplication-config" content="/HackathonUSP2016/public/images/favicon/browserconfig.xml?v=1">
   <meta name="theme-color" content="#3f51b5">
 
   <!-- Styles -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-cyan.min.css"/>
-  <link rel="stylesheet" href="/css/materialize.css">
-  <link href="/css/styles.css" rel="stylesheet">
-  <link href="/css/login.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-cyan.min.css"/>
+   <link rel="stylesheet" href="/HackathonUSP2016/public/css/materialize.css">
+   <link href="/HackathonUSP2016/public/css/styles.css" rel="stylesheet">
+   <link href="/HackathonUSP2016/public/css/login.css" rel="stylesheet">
 
   <!-- Scripts -->
   <script>
@@ -54,7 +54,7 @@
     @else
       <a href="{{ url('/categories') }}" class="title-container">
     @endif
-      <img class="logo-image" src="/images/logo/logo.svg">
+      <img class="logo-image" src="/HackathonUSP2016/public/images/logo/logo.svg">
       <div>
         <span class="title-text">{{ config('app.name', 'Aprendética') }}</span>
       </div>
@@ -98,15 +98,15 @@
       </div>
       <div class="mdl-mega-footer--bottom-section">
         <a href="https://github.com/pedro823/HackathonUSP2016">
-          <img class="svg social-icon" src="/images/icons/github.svg"/>
+          <img class="svg social-icon" src="/HackathonUSP2016/public/images/icons/github.svg"/>
         </a>
       </div>
       <div class="footer-left">
         <a href="http://www5.usp.br/">
-          <img class="svg footer-icon" src="/images/icons/usp.svg"/>
+          <img class="svg footer-icon" src="/HackathonUSP2016/public/images/icons/usp.svg"/>
         </a>
         <a href="https://www.ime.usp.br/">
-          <img class="svg footer-icon" src="/images/icons/ime.svg"/>
+          <img class="svg footer-icon" src="/HackathonUSP2016/public/images/icons/ime.svg"/>
         </a>
       </div>
     </footer>
@@ -116,9 +116,9 @@
 <!-- Scripts -->
 <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
 <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
-<script src="/js/materialize.js"></script>
-<script src="/js/scripts.js"></script>
-<script src="/js/app.js"></script>
+<script src="/HackathonUSP2016/public/js/materialize.js"></script>
+<script src="/HackathonUSP2016/public/js/scripts.js"></script>
+<script src="/HackathonUSP2016/public/js/app.js"></script>
 
 </body>
 </html>
