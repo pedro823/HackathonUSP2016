@@ -13,6 +13,20 @@
   <!-- Title -->
   <title>{{ config('app.name', 'Aprendética') }}</title>
 
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="HackathonUSP2016/public/images/favicon/apple-touch-icon.png?v=1">
+  <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png?v=1" sizes="32x32">
+  <link rel="icon" type="image/png" href="images/favicon/favicon-194x194.png?v=1" sizes="194x194">
+  <link rel="icon" type="image/png" href="images/favicon/android-chrome-192x192.png?v=1" sizes="192x192">
+  <link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png?v=1" sizes="16x16">
+  <link rel="manifest" href="images/favicon/manifest.json?v=1">
+  <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg?v=1" color="#3f51b5">
+  <link rel="shortcut icon" href="images/favicon/favicon.ico?v=1">
+  <meta name="apple-mobile-web-app-title" content="Aprend&eacute;tica">
+  <meta name="application-name" content="Aprend&eacute;tica">
+  <meta name="msapplication-config" content="images/favicon/browserconfig.xml?v=1">
+  <meta name="theme-color" content="#3f51b5">
+
   <!-- Styles -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
